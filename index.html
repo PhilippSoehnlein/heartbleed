@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Heartbleed by tobiastom</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/tobiastom/heartbleed">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/tobiastom/heartbleed/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/tobiastom/heartbleed/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Heartbleed</h1>
+          <p>List of sites that have fixed there infrastructure against heartbleed.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/tobiastom">tobiastom</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="heartbleed" class="anchor" href="#heartbleed"><span class="octicon octicon-link"></span></a>Heartbleed</h1>
+
+<p>List of sites that have fixed there infrastructure against heartbleed.</p>
+
+<p>The idea of this repository came from two tweets from <a href="https://twitter.com/janl/status/453874289528549376">janl</a> and <a href="https://twitter.com/rem/status/453874447305687040">rem</a>.
+We should have some central place where site owner can "notify" everyone that they hardend their infrastructure aginst <a href="http://heartbleed.com">The Heartbleed Bug</a>.</p>
+
+<h2>
+<a name="contribute" class="anchor" href="#contribute"><span class="octicon octicon-link"></span></a>Contribute</h2>
+
+<p>You can contribute your site to this repository via pull requests. To get the name of the file use the following rules:</p>
+
+<ul>
+<li>reverse the domain name</li>
+<li>create a directory for each part (if it does not exist already) **except for the last part)</li>
+<li>add a filename of the last part you just omitted and add the <code>.json</code> extension</li>
+</ul><p>If guides.github.com wanted contribute their update, they would create a file with the name <code>guides.json</code> inside the directory path <code>com/github</code>.</p>
+
+<p>The content is a plain JSON object and can contain the following keys:</p>
+
+<ul>
+<li>
+<strong><code>domain</code></strong> - The name of the domain in a human readable form</li>
+<li>
+<strong><code>time</code></strong> – The time after which communications are assumed to be save again (if unknown use <code>null</code>)</li>
+<li>
+<strong><code>includeSubdomain</code></strong> - If also all subdomains have been secured (<code>true</code> or <code>false</code>)</li>
+<li>
+<strong><code>source</code></strong> - Where this information comes from (e.g. a blogpost)</li>
+</ul><p>An example for guides.github.com would look like this:</p>
+
+<pre><code>{
+    "domain": "guides.github.com",
+    "time": null,
+    "includeSubdomain": false,
+    "source": "https:\/\/github.com\/blog\/1818-security-heartbleed-vulnerability"
+}
+</code></pre>
+
+<h2>
+<a name="feedback" class="anchor" href="#feedback"><span class="octicon octicon-link"></span></a>Feedback</h2>
+
+<p>If you want to provide feedback to this repository: please just create an <a href="https://github.com/tobiastom/heartbleed/issues/new">new issue</a>.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
