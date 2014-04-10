@@ -1,6 +1,6 @@
 # Heartbleed
 
-List of sites that have fixed there infrastructure against heartbleed.
+List of sites that have fixed their infrastructure against heartbleed.
 
 The idea of this repository came from two tweets from [janl](https://twitter.com/janl/status/453874289528549376) and [rem](https://twitter.com/rem/status/453874447305687040).
 We should have some central place where site owner can "notify" everyone that they hardend their infrastructure aginst [The Heartbleed Bug](http://heartbleed.com).
