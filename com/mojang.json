@@ -1,6 +1,6 @@
 {
     "domain": "mojang.com",
-    "time": null,
-    "includeSubdomain": false,
-    "source": "https:\/\/github.com\/musalbas\/heartbleed-masstest"
+    "time": "2014-04-09T00:00:00+00:00",
+    "includeSubdomain": true,
+    "source": "https://mojang.com/2014/04/heartbleed/"
 }
