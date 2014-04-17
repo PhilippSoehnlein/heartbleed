@@ -1,6 +1,7 @@
 {
     "domain": "fiducia.de",
     "time": null,
-    "includeSubdomain": false,
-    "source": "https:\/\/github.com\/musalbas\/heartbleed-masstest"
+    "includeSubdomain": true,
+    "source": "http:\/\/www.fiducia.de\/presse\/pressemittleiungen\/ssl-verbindung_ist_sicher.html",
+    "status": "immune",
 }
